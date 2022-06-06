@@ -3,7 +3,7 @@
     --main-color: #20c997;
     --heading-color: #252b33;
     --color-gray: #4c4d4d;
-    --color-gray-2: #444;
+    --color-gray-2: #dee3e4;
     /* Fontweight */
     --fw-600: 600;
     --fw-700: 700;
@@ -34,17 +34,11 @@ h1, h2, h3, h4{
     color: var(--heading-color)
 }
 h2{
-    font-weight: 600;
+    font-weight: var(--fw-600);
     font-size:28px
 }
 p{
     line-height: 1.8;
-}
-.flex-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 .section-title{
     position: relative;
@@ -53,8 +47,8 @@ p{
 .section-title h2{
     position: relative;
     font-size: calc(1.95rem + 8.4vw);
-    color: #dee3e4;
-    opacity: .4;
+    color: var( --color-gray-2);
+    opacity: .9;
     font-weight: 600;
     text-transform: uppercase;
     z-index: 0;
@@ -67,7 +61,7 @@ p{
 }
 .section-title p{
     font-size: 2.25rem;
-    font-weight: 600;
+    font-weight: var(--fw-700);
     color: #212529;
     line-height: .8;
 }
@@ -100,9 +94,6 @@ p{
 }
 .custome-background{
     background-color: var(--main-color);
-}
-.mr-top{
-    margin-top: 48px;
 }
 /*NAVBAR SECTION*/
 .navbar a{
@@ -190,30 +181,8 @@ p{
 }
 
 /*ABOUT SECTION*/
-.about{
-    padding: 72px 0;
-}
-.about .flex-box{
-    align-items: flex-start
-}
-.about-summary{
-    width: 70%;
-}
-.about-summary h2, .about-summary p, .person-data ul{
-    margin-bottom: 16px;
-}
-.about-summary, .person-data{
-    margin-top: 48px;
-}
-.person-data ul li{
-    padding: 12px 0;
-    border-bottom: 1px solid #e0dede;
-}
-.person-data ul li:last-of-type{
-    border: none
-}
 .person-data ul li span{
-    font-weight: 600;
+    font-weight: var(--fw-600);
 }
 .person-data ul li a{
     transition: .5s color ease
@@ -222,21 +191,10 @@ p{
     color: #1b8162
 }
 /*HOME MEDIA QUERY*/
-@media screen and (max-width: 991px) {
-    .about-summary{
-        width: 100%;
-        text-align: center
-    }
-    .person-data{
-        width: 100%
-    }
-}
+
+
 /*States Section*/
-.states{
-    text-align: center
-}
 .state{
-    width: 25%;
     border-right: #e0dede 1px dotted;
     padding: 20px 12px
 }
@@ -245,20 +203,9 @@ p{
 }
 .state h4{
     color: #6c757d;
-    font-size:44px;
 }
-@media screen and (max-width: 576px) {
-    .state h4{
-        font-size: 35px;
-    }
-}
+
 @media screen and (max-width: 767px) {
-    .state{
-        width: 50%;
-    }
-    .state h4{
-        font-size: 40px;
-    }
     .state:nth-child(1), .state:nth-child(2) {
         border-bottom: 1px dotted #e0dede;
     }
@@ -266,12 +213,7 @@ p{
         border-right: none
     }
 }
-@media screen and (max-width: 991px) {
-    .state h4{
-        font-size: 40px;
-        font-weight: 500;
-    }
-}
+
 /*Services*/
 .services{
     padding: 72px 0;
