@@ -1,18 +1,23 @@
 :root{
+    /*COLORS*/
     --main-color: #20c997;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html{
-    scroll-behavior: smooth;
+    --heading-color: #252b33;
+    --color-gray: #4c4d4d;
+    --color-gray-2: #444;
+    /* Fontweight */
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-500: 500;
+    /* transition */
+    --transition: all .5s ease;
+    /*Font family*/
+    --custome-font: 'Source Sans Pro', sans-serif;
+    --normal-font: "Roboto",sans-serif;
 }
 body{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    color: #4c4d4d;
+    color: var(--color-gray);
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -26,7 +31,7 @@ button{
     cursor: pointer
 }
 h1, h2, h3, h4{
-    color: #252b33;
+    color: var(--heading-color)
 }
 h2{
     font-weight: 600;
@@ -122,117 +127,52 @@ p{
     margin-top: 48px;
 }
 /*NAVBAR SECTION*/
-.navbar{
-    background-color: rgba(0, 0, 0, .5);
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 66px;
-    padding: 5px 0;
-    z-index: 20;
+.navbar a{
+    transition: var(--transition);   
 }
-.navbar .logo{
-    width: 16.66%;
+.navbar-dark .nav-link{
+    color: #fff !important;
 }
-
-.menu ul, .nav-icons ul{
-    display: flex;
-    list-style: none;
+.navbar-light .nav-link{
+    color: var(--heading-color) !important;
 }
-
-.menu ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    padding: 0 13px;
-    transition: .5 color
+.navbar a:hover, .nav-link.active{
+    color: var(--main-color) !important
 }
-.menu ul li a:hover{
-    color: var(--main-color);
+.nav-link{
+    padding: 0 15px !important;
+    font-weight: var(--fw-600);
+    letter-spacing: .5px;
 }
 .nav-icons{
-    flex: 0 0 auto;
-    width: 16.66%;
+    margin-left: 40px;
 }
-.nav-icons ul{
-    justify-content: flex-end;
+.nav-icons a{
+    color: #fff;
+    padding: 0 10px;
 }
-.nav-icons ul li a {
-    padding: 0 12px;
-}
-.nav-icons ul li a img{
-    width: 25px;
-}
-.nav-close{
-    border-radius:3px;
-    padding:6px;
-    margin-left: auto;
-    flex-direction: column;
-    justify-self: center;
-    cursor: pointer;
-    display:none;  
-}
-.nav-close span{
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-    transition: .5s background-color ease-in-out
-}
-.nav-close:hover span{
-    background-color: var(--main-color);
-}
-.nav-close span:last-child{
-    margin-bottom: 0;
-}
-/*MOBILE SCREEN*/
-@media screen and (max-width: 767px){
-    .menu{
-        width: 100% !important;
+/*Navbar Mediaquery*/
+@media screen and (max-width: 991px) {
+    .navbar a{
+        padding-top: 1%  !important;
+        padding-bottom: 1%  !important;
+        color: #282828;
     }
-}
-@media screen and (max-width: 991px){
-    .navbar{
-        padding: 0 12px;
-        justify-content:space-between
+    .navbar-dark .nav-link{
+        color: var(--heading-color) !important;
     }
-    .navbar .logo{
-        width: auto;
+    .nav-link.active{
+        color: var(--main-color) !important
     }
-    .navbar .nav-icons{
-        width: auto;
-        margin-left: 10px
-    }
-    .menu{
-        position: fixed;
-        left: -100%;
-        width: 50%;
-        height: 100%;
-        transition: .7s left .5s;
-        background-color: rgba(0, 0, 0, .5);
-        top:66px;
-    }
-    .menu ul{
-        flex-direction: column;
-        height: 60%;
+    .in{
+        background-color: #f3f3f3;
+        position: absolute;
+        top: 100%;
         width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nav-close{
-        display: flex;
-    }
-    .menu:hover{
-        left:0
-    }
-    .nav-close:hover ~ .menu{
-        left: 0;
+        left:0;
     }
 }
-
+ 
 /*HOME SECTION */
 .home{
     background-image: url(../images/intro-bg.jpg);
@@ -677,10 +617,10 @@ p{
     display: block;
     transition: all 0.5s 
 }
-.active{
+.custome-active{
     border:1px solid var(--main-color);
 }
-.active span{
+.custome-active span{
     background-color: var(--main-color) !important
 }
 .slide-control .parent:hover{

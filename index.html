@@ -13,38 +13,49 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand color-main fs-2 fw-bolder" href="#">
+            <img src="images/navbar/logo-light.png" alt="logo">
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
     
-    <div class="navbar">
-        <div class="logo">
-            <a href="#home">
-                <img src="images/navbar/logo-light.png" alt="logo">
-            </a>
-        </div>
-        <div class="nav-close">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu">
-            <ul>
-                
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">what i do</a></li>
-                <li><a href="#resmue">resmue</a></li>
-                <li><a href="#protofolio">protofolio</a></li>
-                <li><a href="#client">client</a></li>
-                <li><a href="#contact">conatct</a></li>
+          <div class="collapse navbar-collapse in" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item fw-600">
+                    <a class="nav-link" href="#home">home</a>
+                </li>
+                <li class="nav-item fw-600">
+                    <a class="nav-link" href="#about">about</a>
+                </li>
+                <li class="nav-item fw-600">
+                    <a class="nav-link" href="#services">what i do</a>
+                </li>
+                <li class="nav-item fw-600">
+                    <a class="nav-link" href="#resmue">resmue</a>
+                </li>
+                <li class="nav-item fw-600">
+                    <a class="nav-link" href="#protofolio">protofolio</a>
+                </li>
+                <li class="nav-item fw-600">
+                    <a class="nav-link" href="#client">client</a>
+                </li>
+                <li class="nav-item fw-600">
+                    <a class="nav-link" href="#contact">conatct</a>
+                </li>
             </ul>
+            <div class="nav-icons text-center d-none d-xl-block" id="nav-icons">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="nav-icons">
-            <ul>
-                <li><a href=""><img src="images/navbar/twitter.png" alt="twitter"></a></li>
-                <li><a href=""><img src="images/navbar/facebook.png" alt="facebook"></a></li>
-                <li><a href=""><img src="images/navbar/dribbble.png" alt="dribble"></a></li>
-            </ul>
-        </div>
-    </div>
+    </nav>
     <!-- Home Section -->
     <div class="home" id="home">
         <div class="home-content">
@@ -88,7 +99,7 @@
                     <button class="main-btn">Download CV</button>
                     </div>
                 </div>
-                <!-- states -->
+                <!-- states --
                 <div class="states mr-top">
                     <div class="flex-box">
                         <div class="state">
@@ -111,7 +122,7 @@
                 </div>
             </div>
     </div>
-    <!-- Services Section -->
+    <!-- Services Section --
     <div class="services" id="services">
         <div class="container">
             <div class="section-title">
@@ -188,7 +199,7 @@
         </div>
         
     </div>
-    <!-- resmue section -->
+    <!-- resmue section --
     <div class="resmue" id="resmue">
         <div class="container">
             <div class="section-title">
@@ -267,7 +278,7 @@
                 </div>
             </div>
 
-            <!-- my skillset -->
+            <!-- my skillset --
             <div class="skills">
                 <h2>My Skills</h2>
                 <div class="flex-box">
@@ -315,7 +326,7 @@
             
         </div>
     </div>
-    <!-- protofolio -->
+    <!-- protofolio --
     <div class="protofolio" id="protofolio">
         <div class="container">
             <div class="section-title">
@@ -391,7 +402,7 @@
             </div>
         </div>
     </div>
-    <!-- Clients Section -->
+    <!-- Clients Section --
     <div class="client" id="client">
         <div class="container">
             <div class="section-title">
@@ -401,7 +412,7 @@
                     <span></span>
                 </div>
             </div>
-            <!-- slides -->
+            <!-- slides --
             <div class="flex-box">
                 <div class="slide-parent">
                     <div class="slide-content">
@@ -472,7 +483,7 @@
             </div>
         </div>
     </div>
-    <!-- contact Section -->
+    <!-- contact Section --
     <div class="contact"  id="contact">
         <div class="container">
             <div class="section-title">
@@ -519,7 +530,7 @@
             </div>
         </div>
     </div>
-    <!-- footer section -->
+    <!-- footer section --
     <div class="footer">
         <div class="container">
             <div class="flex-box">
@@ -554,5 +565,8 @@
         </div>
         
     </div>
+    -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
