@@ -40,28 +40,6 @@ h2{
 p{
     line-height: 1.8;
 }
-.container{
-    width: 85%;
-    margin:auto;
-}
-/*CONTAINER SRTYLE MOBILE SCREEN*/
-@media screen and (max-width: 576px){
-    .container{
-        width: 100%;
-        padding: 0 15px
-    }
-}
-/*CONTAINER SRTYLE MEDIUM SCREEN*/
-@media screen and (max-width: 767px) and (min-width: 577px){
-    .container{
-        width: 540px
-    }
-}
-@media screen and (min-width: 1200px){
-    .container{
-        width: 1190px
-    }
-} 
 .flex-box{
     display: flex;
     justify-content: space-between;
@@ -176,11 +154,9 @@ p{
 /*HOME SECTION */
 .home{
     background-image: url(../images/intro-bg.jpg);
-    height: 100vh;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    position: relative;
 }
 .home::after{
     content: "";
@@ -193,23 +169,12 @@ p{
     z-index: 0;
 }
 .home-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    position: relative;
     z-index: 1;
 }
 .home-content h1{
-    font-size: calc(1.525rem + 3.3vw) !important;
-    margin-bottom: 30px;
-    color: #fff;
+    font-size: calc(1.525rem + 3.1vw) !important;
 }
 .home-content p{
-    font-size: 24px;
     line-height: 1.86em;
     margin-bottom: 40px;
 }
@@ -224,15 +189,6 @@ p{
     color: #fff;
 }
 
-/*HOME SECTION MEDIA QUERY*/
-@media screen and (max-width: 767px){
-    .home-content p{
-        font-size:22px
-    }
-    .home-content p:last-of-type{
-        font-size: 16px;
-    }
-}
 /*ABOUT SECTION*/
 .about{
     padding: 72px 0;
@@ -867,15 +823,14 @@ p{
 .pointer{
     position: absolute;
     width: 20px;
-    height: 50px;
+    height: 70px;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
     z-index: 10;
 }
-.pointer img{
-    width: 30px;
+.pointer i{
     position: absolute;
     top: 1px;
     transform: translateX(-50%);

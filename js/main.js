@@ -5,15 +5,10 @@ window.onscroll = function () {
     if(this.scrollY > 20){
         nav.classList.add('shadow-lg')
         nav.classList.add('bg-dark')
-        icons.forEach( icon => {
-            icon.classList.add('text-black')
-        })
     }else{
         nav.classList.remove('shadow-lg')
         nav.classList.remove('bg-dark')
-        icons.forEach( icon => {
-            icon.classList.remove('text-black')
-        })
+      
     }
 }
     
