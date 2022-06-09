@@ -382,7 +382,7 @@ p{
     padding: 20px 12px;
 }
 .slide-content{
-    background-color: #f8f9fa;
+    background-color: var(--color-gray-2);
     padding: 48px
 }
 .slide-content .slide-top{
