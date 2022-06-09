@@ -229,20 +229,8 @@ p{
 
 
 /*RESUME SECTION*/
-.resmue {
-    padding: 72px 0
-}
-.column{
-    width: 50%;
-    padding: 0 24px
-}
-.column h2{
-    margin-bottom: 24px
-}
+
 .e-box{
-    width: 100%;
-    padding: 24px;
-    margin-bottom: 24px;
     border: 1px solid #dee2e6;
     border-radius: 3px;
 }
@@ -261,12 +249,7 @@ p{
 .e-box p:nth-child(3n){
     color: #dc3545;
     margin-bottom: 16px;
-}
-@media screen and (max-width: 767px) {
-    .column{
-        width: 100%
-    }
-}
+}  
 /*Skills Section*/
 .skills h2{
     margin: 24px 0;
