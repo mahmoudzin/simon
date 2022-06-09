@@ -252,24 +252,16 @@ p{
 }  
 /*Skills Section*/
 .skills h2{
-    margin: 24px 0;
-    padding-left: 24px 
+    
 }
-.skill-box{
-    width: 50%;
-    padding: 0 24px;
-    margin-bottom: 24px;
-}
+
 .skill-box p{
     color: #212529;
     margin-bottom: 8px;
     font-weight: 500
 }
-.skill-box p span{
-    float: right;
-}
+
 .progress-back{
-    width: 100%;
     height: 8px;
     background-color: #e9ecef;
     border-radius: 5px;
@@ -278,23 +270,6 @@ p{
     height: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-}
-.btn {
-    text-align: center;
-}
-.btn .main-btn{
-    color: #6c757d;
-    border-color: #6c757d;
-    background-color:transparent;
-}
-.btn .main-btn:hover{
-    background-color:#6c757d;
-    color: #fff
-}
-@media screen and (max-width: 767px) {
-    .skill-box{
-        width: 100%
-    }
 }
 /*PROTOFOLIO SECTION*/
 .protofolio{
