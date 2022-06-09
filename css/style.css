@@ -215,44 +215,19 @@ p{
 }
 
 /*Services*/
-.services{
-    padding: 72px 0;
-    background-color: #f8f9fa;
-}
-.service-box{
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 50%;
-    padding: 0 12px;
-    margin-bottom: 48px;
-}
+
+
 .service-icon{
-    width: 70px;
     height: 70px;
-    text-align: center;
-    line-height: 85px;
-    background-color: #fff;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-}
-.service-icon img{
-    width: 30px
-}
-.service-content{
-    width: calc(100% - 70px);
-    padding-left: 15px;
-}
-.service-content h3{
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-size: 20px;
+    line-height:70px;
 }
 
-@media screen and (max-width: 767px) {
-    .service-box{
-        width: 100%
-    }
+.service-content h3{
+    font-weight: var(--fw-500);
 }
+
+
+
 /*RESUME SECTION*/
 .resmue {
     padding: 72px 0
