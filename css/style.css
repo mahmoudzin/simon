@@ -251,16 +251,11 @@ p{
     margin-bottom: 16px;
 }  
 /*Skills Section*/
-.skills h2{
-    
-}
-
 .skill-box p{
     color: #212529;
     margin-bottom: 8px;
     font-weight: 500
 }
-
 .progress-back{
     height: 8px;
     background-color: #e9ecef;
@@ -272,18 +267,9 @@ p{
     border-bottom-left-radius: 5px;
 }
 /*PROTOFOLIO SECTION*/
-.protofolio{
-    padding: 72px 0;
-}
-.protofolio ul{
-    margin-bottom: 48px;
-    display: flex;
-    justify-content: center;
-}
 .protofolio ul li{
-    margin-left: 15px;
     cursor: pointer;
-    transition: 0.3s color;
+    transition: var(--transition);
 }
 .protofolio ul li:hover{
     color: var(--main-color);
@@ -292,6 +278,8 @@ p{
   height: 1000px;
 }
 .projects-area .flex-box{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items:flex-start;
     justify-content: flex-start;
