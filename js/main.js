@@ -11,7 +11,12 @@ window.onscroll = function () {
       
     }
 }
-    
+
+$('.nav-link').click(function(){
+    let currentRev = $(this).attr('href');
+    let secTop = $(currentRev).offset().top;
+    $('body,html').animate({scrollTop: secTop}, 2000)
+})   
 // Typed Object
 let typed = new Typed("#typing", 
     {
